@@ -1,0 +1,17 @@
+.MainPage {
+    margin: auto;
+    height: 1000px;
+    background-color: #b7a3a3;
+    font-size: 14px;
+    font-family: Verdana;
+    flex: auto;
+}
+
+
+.MainPage .LeftPanel {
+    height: 1000px;
+    width: 256px;
+    background-color: #2a1515;
+    font-size: 14px;
+    font-family: Verdana;
+}

@@ -1,0 +1,50 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+  background-color: #bcc9c4;
+}
+
+.Header .AppName {
+  font-size: 3rem;
+  flex: 1 1;
+  color: #7e6f6f;
+}
+
+.Header .Menu li {
+  float: right;
+}
+
+.Header .Menu  .SubMenu {
+    font-weight: bold;
+    color: white;
+    background-color: #9d968b;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+@media (min-width: 580px) {
+  .Header .Menu {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .Header .AppName h2 {
+    font-size: 1.25rem;
+    float: left;
+  }
+
+  .Header .Menu .SubMenu {
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  @media screen and (max-width: 400px) {
+    .Header .Menu li a {
+      text-align: center;
+      float: none;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.Footer {
+  background-color: azure;
+}
+
+.Footer h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2a1515;
+  font-size: small;
+}
