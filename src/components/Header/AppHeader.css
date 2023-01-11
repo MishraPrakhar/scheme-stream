@@ -12,15 +12,17 @@
 }
 
 .Header .Menu li {
-  float: right;
+  float: left;
+  padding: 93px 36px 0px 40px;
 }
 
-.Header .Menu  .SubMenu {
-    font-weight: bold;
-    color: white;
-    background-color: #9d968b;
-    border: 1px solid white;
-    border-radius: 12px;
+.Header .Menu ul {
+  list-style:none ;
+}
+
+.Header .Menu .SubMenu {
+  font-weight: bold;
+  color: #7e6f6f;
 }
 
 @media (min-width: 580px) {
@@ -29,11 +31,6 @@
     align-items: center;
     justify-content: flex-start;
     flex: 1;
-  }
-
-  .Header .AppName h2 {
-    font-size: 1.25rem;
-    float: left;
   }
 
   .Header .Menu .SubMenu {
