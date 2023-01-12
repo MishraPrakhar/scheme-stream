@@ -3,7 +3,7 @@ import "./AppHeader.css";
 export default function AppHeader() {
   return (
     <header className="Header">
-      <h2 className="AppName">SchemStream</h2>
+      <h2 className="AppName">Scheme Stream</h2>
       <div className="Menu">
         <ul>
           <li>

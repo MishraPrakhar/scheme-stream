@@ -1,13 +1,19 @@
 .Footer {
-  background-color: azure;
+  background-color: #a997b9;
+  height: 340px;
 }
 
-.Footer h3 {
+
+.Footer .FooterRow{
+  height: 270px;
+}
+.Footer .Copyright h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #2a1515;
   font-size: small;
   margin-block-start: 0em;
   margin-block-end: 0em;
   align-items: center;
-  display: flex;  
+  display: flex;
+  margin-inline-start: 50%;
 }
