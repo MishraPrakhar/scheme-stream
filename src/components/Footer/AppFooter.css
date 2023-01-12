@@ -5,13 +5,14 @@
 
 
 .Footer .FooterRow{
-  height: 270px;
+  height: 200px;
+  display: flex;
 }
 .Footer .Copyright h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #2a1515;
+  color: #545353;
   font-size: small;
-  margin-block-start: 0em;
+  margin-block-start: 4em;
   margin-block-end: 0em;
   align-items: center;
   display: flex;
