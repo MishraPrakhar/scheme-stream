@@ -8,7 +8,7 @@ export default function RightPanel({ types }) {
   async function fetchSchemeTopicHandler() {
     const response = await fetch(
       //"http://localhost:1001/api/v1/react/customer/schemes/" + props.schemeType
-      "http://localhost:1001/api/v1/customer/schemes/" + types[3]
+      "http://13.68.159.2:1001/api/v1/customer/schemes/" + types[3]
     );
     const data = await response.json();
     console.log(data);
@@ -22,8 +22,7 @@ export default function RightPanel({ types }) {
           className="RightPanel__Type"
           href="#SchemesTypes"
           onClick={fetchSchemeTopicHandler}
-        >
-          {scheme}
+        >{scheme}
         </div>
       ))}
 
