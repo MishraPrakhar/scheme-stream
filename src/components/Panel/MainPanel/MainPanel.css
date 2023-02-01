@@ -1,0 +1,12 @@
+.MainPanel {
+  margin: auto;
+  background-color: #dfdddd;
+  font-size: 14px;
+  font-family: Verdana;
+  height: 500px;
+  position:relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow:hidden;
+}

@@ -1,0 +1,10 @@
+.Scheme {
+  width: 100%;
+  /* height: 100px; */
+  display: flex;
+  background-color: #b5b6cb;
+  border-radius: 7px;
+  border-style: groove;
+  text-align: left;
+  padding: 5px;
+}
