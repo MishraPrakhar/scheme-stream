@@ -11,7 +11,8 @@ export default function RightPanel({ types }) {
     console.log(scheme);
     const response = await fetch(
       //"http://localhost:1001/api/v1/react/customer/schemes/" + props.schemeType
-      "http://localhost:1001/api/v1/customer/schemes/" + scheme
+      "http://az-vm.eastus.cloudapp.azure.com:1001/api/v1/customer/schemes/" +
+        scheme
     );
     const data = await response.json();
     console.log(data);

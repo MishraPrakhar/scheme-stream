@@ -11,7 +11,7 @@ const [rightSchemeTypes, setRightSchemeTypes] = useState([]);
   async function fetchAllSchemeTypes() {
     const response = await fetch(
       //"http://localhost:1001/api/v1/react/customer/schemes/all-types"
-      "http://localhost:1001/api/v1/customer/schemes/all-types"
+      "http://az-vm.eastus.cloudapp.azure.com:1001/api/v1/customer/schemes/all-types"
     ).then((apiResponse) => {
       if (!apiResponse.ok) {
         console.log("error");
