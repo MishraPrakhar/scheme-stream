@@ -4,18 +4,9 @@ const SchemeDetails = (schDetails) => {
   console.log("Schemedetails : " +JSON.stringify(schDetails));
   return (
     <div className="Scheme">
-      <p>{schDetails.schemeName}</p>
-      <p>{schDetails.schemeTopicName}</p>
-      <p>{schDetails.createdAt}</p>
-      <p>{schDetails.schemeName}</p>
-      <p>{schDetails.schemeTopicName}</p>
-      <p>{schDetails.createdAt}</p>
-      <p>{schDetails.schemeName}</p>
-      <p>{schDetails.schemeTopicName}</p>
-      <p>{schDetails.createdAt}</p>
-      <p>{schDetails.schemeName}</p>
-      <p>{schDetails.schemeTopicName}</p>
-      <p>{schDetails.createdAt}</p>
+      <div className="scheme_cell">{schDetails.schemeName}</div>
+      <div className="scheme_cell">{schDetails.schemeTopicName}</div>
+      <div className="scheme_cell">{schDetails.createdAt}</div>
     </div>
   );
 };

@@ -6,13 +6,13 @@
   width: 85%;
   display: inline-block;
   height: 100%;
-  overflow-x: scroll;
+
 }
 
 .RightPanel__Type {
-  height: 15px;
+  height: 10%;
   width: 11%;
-  background-color: #442e44;
+  background-color: #03c5b5;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -24,7 +24,8 @@
 
 .RightPanel__Type:hover,
 .RightPanel__Type:focus {
-  background-color: #7c088b;
+  background-color: #2b6777;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown {
@@ -43,7 +44,7 @@
   background-color: #f1f1f1;
   min-width: 160px;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  
   z-index: 1;
 }
 

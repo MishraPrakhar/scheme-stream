@@ -1,19 +1,22 @@
-.SchemeTypes__Type {
-  height: 15px;
+.SchemeTypes {
+  /* height: 46px; */
   width: 100%;
-  background-color: #ad7dac;
-  color: white;
-  padding: 16px;
+  /* background-color: #c8d8e4; */
+  color: #fff;
+  /* padding: 16px; */
   font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 7px;
-  display: flex;
+  border-bottom-color: #2e3133;
+  /* cursor: pointer; */
+  border: 1;
+  display: inline-block;
+}
+.SchemeTypes__Type {
+height: 46px;
 }
 
 .SchemeTypes__Type:hover,
 .SchemeTypes__Type:focus {
-  background-color: #7c088b;
+  background-color: #03c5b5;
 }
 
 .dropdown {
@@ -50,4 +53,3 @@
 .show {
   display: block;
 }
-

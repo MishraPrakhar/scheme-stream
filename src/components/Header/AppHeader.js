@@ -5,28 +5,7 @@ export default function AppHeader() {
     <header className="Header">
       <h2 className="AppName">Scheme Stream</h2>
       <div className="Menu">
-        <ul>
-          <li>
-            <a className="SubMenu" href="#home">
-              Home
-            </a>
-          </li>
-          <li>
-            <a className="SubMenu" href="#news">
-              News
-            </a>
-          </li>
-          <li>
-            <a className="SubMenu" href="#contact">
-              Contact
-            </a>
-          </li>
-          <li>
-            <a className="SubMenu" href="#about">
-              About
-            </a>
-          </li>
-        </ul>
+        <h2 className="SubMenu">Profile</h2>
       </div>
     </header>
   );

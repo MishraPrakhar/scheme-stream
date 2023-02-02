@@ -5,10 +5,13 @@ import "./RightPanel.css";
 export default function RightPanel({ types }) {
   console.log("Types from RightPanel: " + types);
   const [schDetails, setSchDetails] = useState([]);
-  async function fetchSchemeTopicHandler() {
+
+
+  async function fetchSchemeTopicHandler(scheme) {
+    console.log(scheme);
     const response = await fetch(
       //"http://localhost:1001/api/v1/react/customer/schemes/" + props.schemeType
-      "http://13.68.159.2:1001/api/v1/customer/schemes/" + types[3]
+      "http://localhost:1001/api/v1/customer/schemes/" + scheme
     );
     const data = await response.json();
     console.log(data);
@@ -18,12 +21,14 @@ export default function RightPanel({ types }) {
   return (
     <div className="RightPanel">
       {types.map((scheme) => (
-        <div
+        <button
+          value={scheme}
           className="RightPanel__Type"
           href="#SchemesTypes"
-          onClick={fetchSchemeTopicHandler}
-        >{scheme}
-        </div>
+          onClick={(e) => fetchSchemeTopicHandler(e.target.value)}
+        >
+          {scheme}
+        </button>
       ))}
 
       {schDetails.map((schemes) => (
