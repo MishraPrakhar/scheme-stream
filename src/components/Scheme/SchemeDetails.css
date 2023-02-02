@@ -15,4 +15,5 @@
   border-style: groove;
   height: 30px;
   width: 30%;
+  display: flex;
 }

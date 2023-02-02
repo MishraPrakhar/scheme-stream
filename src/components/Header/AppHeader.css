@@ -16,6 +16,7 @@
   display: flex;
   color: #ffffff;
   width: 20%;
+  margin: 0px;
 }
 
 .Header .Menu li {
