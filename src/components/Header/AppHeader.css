@@ -6,17 +6,18 @@
   z-index: 1;
   justify-content: space-between;
   box-shadow: 0 13px 34px rgb(0 0 0 / 25%);
-  background-color: #03c5b5 ;
+  background-color: #03c5b5;
   display: flex;
   position: fixed;
 }
 
 .Header .AppName {
-  font-size: 3rem;
+  font-size: 41px;
   display: flex;
   color: #ffffff;
   width: 20%;
-  margin: 0px;
+  margin: 31px 1px 1px 1px;
+  display: flex;
 }
 
 .Header .Menu li {
