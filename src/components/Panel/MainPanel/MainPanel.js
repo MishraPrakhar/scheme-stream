@@ -1,7 +1,6 @@
 import "./MainPanel.css";
 import LeftPanel from "../LeftPanel/LeftPanel";
 import RightPanel from "../RightPanel/RightPanel";
-import LeftPanelStream from "../LeftPanel/LeftPanelStream";
 import { useState, useEffect } from "react";
 
 export default function MainPanel() {

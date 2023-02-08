@@ -11,7 +11,11 @@
   display: inline-block;
 }
 .SchemeTypes__Type {
-height: 46px;
+  height: 46px;
+  text-transform: lowercase;
+}
+.SchemeTypes__Type::first-letter {
+    text-transform: uppercase;
 }
 
 .SchemeTypes__Type:hover,

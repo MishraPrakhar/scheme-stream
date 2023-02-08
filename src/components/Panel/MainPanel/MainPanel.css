@@ -8,4 +8,5 @@
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+  /* background-image: url("../../../images/logo512.png"); */
 }
