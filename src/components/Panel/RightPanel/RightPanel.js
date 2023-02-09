@@ -11,7 +11,8 @@ export default function RightPanel({ types }) {
     console.log(scheme);
     const response = await fetch(
       //"http://localhost:1001/api/v1/react/customer/schemes/" + props.schemeType
-      "http://az-vm.eastus.cloudapp.azure.com:1001/api/v1/customer/schemes/" +
+      "http://localhost:1001/api/v1/schemes/" + 
+      //"http://az-vm.eastus.cloudapp.azure.com:1001/api/v1/customer/schemes/" +
         scheme
     );
     const data = await response.json();
@@ -34,6 +35,7 @@ export default function RightPanel({ types }) {
 
       {schDetails.map((schemes) => (
         <SchemeDetails
+          schemeId={schemes.schemeId}
           schemeName={schemes.schemeName}
           schemeTopicName={schemes.schemeType}
           createdBy={schemes.createdBy}

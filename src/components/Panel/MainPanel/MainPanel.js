@@ -4,13 +4,13 @@ import RightPanel from "../RightPanel/RightPanel";
 import { useState, useEffect } from "react";
 
 export default function MainPanel() {
-const [leftSchemeTypes, setLeftSchemeTypes] = useState([]);
-const [rightSchemeTypes, setRightSchemeTypes] = useState([]);
+const [schemeTypes, setSchemeTypes] = useState([]);
+
 
   async function fetchAllSchemeTypes() {
     const response = await fetch(
-      //"http://localhost:1001/api/v1/react/customer/schemes/all-types"
-      "http://az-vm.eastus.cloudapp.azure.com:1001/api/v1/customer/schemes/all-types"
+      "http://localhost:1001/api/v1/schemes/all-types"
+      //"http://az-vm.eastus.cloudapp.azure.com:1001/api/v1/schemes/all-types"
     ).then((apiResponse) => {
       if (!apiResponse.ok) {
         console.log("error");
@@ -24,8 +24,8 @@ const [rightSchemeTypes, setRightSchemeTypes] = useState([]);
     const schTypes = data.map((x) => x.schemeType);
     const uniqueSchTypes = [...new Set(schTypes)];
     console.log("main panel : ", uniqueSchTypes);
-    setRightSchemeTypes(uniqueSchTypes);
-    setLeftSchemeTypes(uniqueSchTypes);
+  
+    setSchemeTypes(uniqueSchTypes);
   }
 
   useEffect(() => {
@@ -35,9 +35,8 @@ const [rightSchemeTypes, setRightSchemeTypes] = useState([]);
 
   return (
     <div className="MainPanel">
-      <LeftPanel types={leftSchemeTypes} />
-      <RightPanel types={leftSchemeTypes} />
-
+      <LeftPanel types={schemeTypes} />
+      <RightPanel types={schemeTypes} />
     </div>
   );
 }
