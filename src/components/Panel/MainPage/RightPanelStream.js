@@ -1,6 +1,6 @@
 import React, { useCallback, useState, useEffect } from "react";
 import "./RightPanel.css";
-import SchemeDetails from "../../Scheme/SchemeDetails"
+import SchemeDetails from "../../Scheme/SchemeDetails";
 
 const BaseURL = "http://localhost:1001";
 

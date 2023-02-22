@@ -1,20 +1,20 @@
 .Footer {
-  background-color: #03c5b5;
-  height: 340px;
-}
-
-
-.Footer .FooterRow{
+  box-shadow: inset 0px -20px 20px 0px rgb(114 29 149 / 28%);
   height: 200px;
-  display: flex;
 }
-.Footer .Copyright h3 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #ffffff;
-  font-size: small;
-  margin-block-start: 4em;
-  margin-block-end: 0em;
-  align-items: center;
+
+.Footer .FooterRow {
   display: flex;
+  width: 100%;
+}
+
+.Footer .FooterRow h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fcfafd;
+  font-size: small;
+  /* margin-block-start: 4em; */
+  /* margin-block-end: 0em; */
+  /* align-items: center; */
+  /* display: flex; */
   margin-inline-start: 50%;
 }

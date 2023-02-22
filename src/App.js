@@ -1,14 +1,12 @@
 import './App.css';
-import AppHeader from './components/Header/AppHeader';
-import Content from "./components/Content/Content";
-import AppFooter from "./components/Footer/AppFooter";
+import HomePage from "./components/Panel/HomePage/HomePage";
 
 function App() {
   return (
     <div className="App">
-      <AppHeader />
-      <Content />
-      <AppFooter copyRight="Prakhar LLC" />
+      {/* <AppHeader /> */}
+      <HomePage />
+      {/* <AppFooter copyRight="Prakhar LLC" /> */}
     </div>
   );
 }

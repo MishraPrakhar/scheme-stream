@@ -1,0 +1,11 @@
+.HomePage {
+  background-color: #f8f8f8;
+  font-size: 14px;
+  font-family: Verdana;
+  position: relative;
+  display: inline-grid;
+  /* flex-wrap: wrap; */
+  /* overflow-x: scroll; */
+  width: 100%;
+  text-transform: lowercase;
+}

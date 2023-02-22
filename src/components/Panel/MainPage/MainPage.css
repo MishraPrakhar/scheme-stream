@@ -1,0 +1,33 @@
+.MainPage {
+  width: 100%;
+  display: inline;
+  height: 640px;
+  /* margin-top: 121px; */
+}
+
+.MainPage__Type {
+  height: 9.3%;
+  width: 11%;
+  /* background-color: #03c5b5; */
+  color: #623b83;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  /*border-radius: 7px; */
+  display: inline-block;
+  text-transform: lowercase;
+}
+
+.MainPage__Type::first-letter {
+  text-transform: uppercase;
+}
+
+.MainPage__Type:hover,
+.MainPage__Type:focus {
+  background-color: #2b6777;
+}
+
+.show {
+  display: block;
+}

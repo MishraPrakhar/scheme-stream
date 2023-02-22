@@ -1,0 +1,32 @@
+.MainMenu {
+  font-size: 14px;
+  font-family: Verdana;
+  display: inline-block;
+  overflow: hidden;
+  /* width: 33%; */
+  /* display: flex; */
+  overflow-y: auto;
+}
+
+.MainMenu .MainMenuType {
+  height: 100%;
+  width: 100%;
+  background-color: #623b83;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  /* border-radius: 7px; */
+  display: flex;
+}
+
+.MainMenuType::first-letter {
+  text-transform: uppercase;
+}
+
+.MainMenuType:hover,
+.MainMenuType:focus {
+  background-color: #ce0362d2;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}

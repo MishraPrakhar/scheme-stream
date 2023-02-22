@@ -5,16 +5,15 @@
   height: 121px;
   z-index: 1;
   justify-content: space-between;
-  box-shadow: 0 13px 34px rgb(0 0 0 / 25%);
-  background-color: #03c5b5;
+  box-shadow: inset 0px -20px 20px 0px rgb(114 29 149 / 28%);
+  background-color: #f8f8f8;
   display: flex;
-  position: fixed;
 }
 
 .Header .AppName {
   font-size: 39px;
   display: flex;
-  color: #ffffff;
+  color: #623b83;
   /* width: 20%; */
   margin: 31px 1px 1px 1px;
   display: flex;
@@ -32,7 +31,7 @@
 
 .Header .Menu .SubMenu {
   font-weight: bold;
-  color: #ffffff;
+  color: #623b83;
   text-decoration: none;
   display: flex;
 }
