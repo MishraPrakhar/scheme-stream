@@ -1,12 +1,20 @@
-import Menu from "../Menu/Menu";
 import "./AppHeader.css";
 
-export default function AppHeader() {
+export default function AppHeader(props) {
+  const SignInHandler = (event) => {
+    if (event.target.value !== "") {
+      console.log(props);
+      props.onLoginOption(true);
+    }
+  };
+
   return (
     <header className="Header">
-      <h2 className="AppName">Scheme Stream</h2>
-      <div className="Menu">
-        <h2 className="SubMenu">Profile</h2>
+      <h2 className="HeaderName">Scheme Stream</h2>
+      <div className="Account">
+        <div className="Account__Type" onClick={SignInHandler}>
+          My Account
+        </div>
       </div>
     </header>
   );

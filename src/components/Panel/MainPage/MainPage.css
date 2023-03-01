@@ -3,20 +3,25 @@
   display: inline;
   height: 640px;
   /* margin-top: 121px; */
+  /* background-image: url("../../../images/HomeImage1366x768.jpg"); */
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(4px);
+  -webkit-filter: blur(8px); */
+  background-position: center;
 }
 
-.MainPage__Type {
-  height: 9.3%;
-  width: 11%;
-  /* background-color: #03c5b5; */
-  color: #623b83;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  /*border-radius: 7px; */
-  display: inline-block;
-  text-transform: lowercase;
+.MenuOption {
+  height: 6%;
+  width: 100%;
+  background-color: #240370;;
+  /* padding: 16px; */
+  /* font-size: 16px; */
+  /* border: none; */
+  /* cursor: pointer; */
+  /* border-radius: 7px; */
+  display: inline-flex;
+  overflow-y: auto;
 }
 
 .MainPage__Type::first-letter {
@@ -25,7 +30,7 @@
 
 .MainPage__Type:hover,
 .MainPage__Type:focus {
-  background-color: #2b6777;
+  background-color: #240370;;
 }
 
 .show {

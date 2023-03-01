@@ -8,8 +8,8 @@ const Scheme = (props) => {
   return (
     <div className="Scheme">
       {props.scheme.map((scheme) => (
-        <ul>
-          <a>{scheme.schemeName}</a>
+        <ul key={scheme.createdAt}>
+          <a href="#a">{scheme.schemeName}</a>
         </ul>
       ))}
     </div>

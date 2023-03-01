@@ -4,8 +4,9 @@
   font-family: Verdana;
   position: relative;
   display: inline-grid;
+  height: 100%;
+  width: 100%;
   /* flex-wrap: wrap; */
   /* overflow-x: scroll; */
-  width: 100%;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
 }

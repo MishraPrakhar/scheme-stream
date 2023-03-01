@@ -10,47 +10,51 @@
   display: flex;
 }
 
-.Header .AppName {
+.Header .HeaderName {
   font-size: 39px;
   display: flex;
-  color: #623b83;
+  color: #240370;;
   /* width: 20%; */
   margin: 31px 1px 1px 1px;
   display: flex;
 }
 
-.Header .Menu li {
+.Header .Account li {
   float: left;
   padding: 15px 27px 0px 24px;
   display: flex;
 }
 
-.Header .Menu ul {
+.Header .Account ul {
   list-style: none;
 }
 
-.Header .Menu .SubMenu {
+.Header .Account .Account__Type {
   font-weight: bold;
-  color: #623b83;
-  text-decoration: none;
+  color: #240370;;
+  text-decoration: #240370;;
   display: flex;
+  font-size: 0.9rem;
+  padding: 0px 8px 0px 0px;
+  border: none;
+  cursor: pointer;
 }
 
 @media (min-width: 580px) {
-  .Header .Menu {
+  .Header .Account {
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-end;
+    /* justify-content: flex-start; */
     display: flex;
   }
 
-  .Header .Menu .SubMenu {
-    font-size: 1.25rem;
-    padding: 0.5rem 1.5rem;
+  .Header .Account .Account__Type {
+    font-size: 0.9rem;
+    padding: 0px 8px 0px 0px;
   }
 
   @media screen and (max-width: 400px) {
-    .Header .Menu li a {
+    .Header .Account li a {
       text-align: center;
       float: none;
     }

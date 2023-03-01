@@ -3,8 +3,8 @@ import { useState } from "react";
 import "./Menu.css";
 
 const Menu = (props) => {
-  console.log("Menu : "+ props.menuOption);
-  
+  console.log("Menu : " + props.menuOption);
+
   const [schemes, setSchemes] = useState([]);
   async function getMenuOptionHandler(event) {
     if (event.target.value === "Scheme Portal") {
@@ -25,7 +25,8 @@ const Menu = (props) => {
 
       //Uplifting response
       props.onOptionSelect(schemes);
-    } else {
+    }
+    if (event.target.value === "Portfolio") {
       props.onOptionSelect([""]);
     }
   }

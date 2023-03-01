@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import LoginForm from "../../Form/LoginForm";
 import Menu from "../../Menu/Menu";
 import Scheme from "../../Scheme/Scheme";
 
@@ -10,15 +11,18 @@ export default function MainPage(props) {
   const [schemes, setSchemes] = useState([]);
   const getOptionHandler = (selectedMenuResponse) => {
     console.log(selectedMenuResponse);
+    if(undefined !== selectedMenuResponse)
     setSchemes(selectedMenuResponse);
   };
 
   return (
     <div className="MainPage">
-      {props.menuOptions.map((options) => (
-        <Menu menuOption={options} onOptionSelect={getOptionHandler} />
-      ))}
-
+      <div className="MenuOption">
+        {props.menuOptions.map((options) => (
+          <Menu menuOption={options} onOptionSelect={getOptionHandler} />
+        ))}
+      </div>
+      {props.isLogin ? <LoginForm /> : <></>}   
       <Scheme scheme={schemes} />
     </div>
   );

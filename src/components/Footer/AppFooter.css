@@ -1,6 +1,7 @@
 .Footer {
   box-shadow: inset 0px -20px 20px 0px rgb(114 29 149 / 28%);
   height: 200px;
+  background-color: #240370;;
 }
 
 .Footer .FooterRow {
