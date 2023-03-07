@@ -1,12 +1,18 @@
 .Footer {
-  box-shadow: inset 0px -20px 20px 0px rgb(114 29 149 / 28%);
+  box-shadow: 0px -20px 20px 0px rgb(114 29 149 / 28%);
   height: 200px;
-  background-color: #240370;;
+  background-color: #240370;
+  
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
 }
 
 .Footer .FooterRow {
   display: flex;
   width: 100%;
+  justify-content: center;
 }
 
 .Footer .FooterRow h3 {
@@ -17,5 +23,5 @@
   /* margin-block-end: 0em; */
   /* align-items: center; */
   /* display: flex; */
-  margin-inline-start: 50%;
+  /* margin-inline-start: 50%; */
 }

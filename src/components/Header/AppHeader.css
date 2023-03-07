@@ -8,15 +8,19 @@
   box-shadow: inset 0px -20px 20px 0px rgb(114 29 149 / 28%);
   background-color: #f8f8f8;
   display: flex;
+  justify-content: space-between;
 }
 
 .Header .HeaderName {
   font-size: 39px;
   display: flex;
-  color: #240370;;
-  /* width: 20%; */
-  margin: 31px 1px 1px 1px;
+  color: #240370;
+  width: 50%;
+  margin: 0px 0px 0px 0px;
   display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .Header .Account li {
@@ -29,32 +33,37 @@
   list-style: none;
 }
 
-.Header .Account .Account__Type {
-  font-weight: bold;
-  color: #240370;;
-  text-decoration: #240370;;
+.Header .Account {
+  color: #240370;
   display: flex;
   font-size: 0.9rem;
-  padding: 0px 8px 0px 0px;
+  /* padding: 0px 8px 0px 0px; */
   border: none;
+  flex-direction: column-reverse;
+}
+
+.Account__Type {
+  color: #240370;
+  border: none;
+  background-color: #f0f8ff00;
+  font-size: 0.9rem;
   cursor: pointer;
+  font-size: 0.9rem;
+  /* padding: 0px 8px 0px 0px; */
+  text-decoration: #240370;
+  font-weight: bold;
 }
 
 @media (min-width: 580px) {
-  .Header .Account {
+  .Account__Type {
     flex-direction: row;
     align-items: flex-end;
     /* justify-content: flex-start; */
     display: flex;
   }
 
-  .Header .Account .Account__Type {
-    font-size: 0.9rem;
-    padding: 0px 8px 0px 0px;
-  }
-
   @media screen and (max-width: 400px) {
-    .Header .Account li a {
+    .Account__Type li a {
       text-align: center;
       float: none;
     }

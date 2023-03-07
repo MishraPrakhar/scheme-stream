@@ -12,9 +12,9 @@ export default function AppHeader(props) {
     <header className="Header">
       <h2 className="HeaderName">Scheme Stream</h2>
       <div className="Account">
-        <div className="Account__Type" onClick={SignInHandler}>
+        <button value ="login" className="Account__Type" onClick={SignInHandler}>
           My Account
-        </div>
+        </button>
       </div>
     </header>
   );

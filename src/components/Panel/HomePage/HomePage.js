@@ -13,12 +13,8 @@ export default function HomePage() {
       console.log(isLogin);
       setIsLoginRequested(isLogin);
     };
-  return (
-    // <div className="MainPanel">
-    //   <LeftPanel types={schemeTypes} />
-    //   <RightPanel types={schemeTypes} />
-    // </div>
 
+  return (
     <div className="HomePage">
       <AppHeader onLoginOption={LoginOptionHandler} />
       <MainPage menuOptions={AppOptions} isLogin={isLoginRequested} />

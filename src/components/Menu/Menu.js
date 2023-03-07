@@ -3,8 +3,6 @@ import { useState } from "react";
 import "./Menu.css";
 
 const Menu = (props) => {
-  console.log("Menu : " + props.menuOption);
-
   const [schemes, setSchemes] = useState([]);
   async function getMenuOptionHandler(event) {
     if (event.target.value === "Scheme Portal") {
